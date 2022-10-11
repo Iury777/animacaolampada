@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lampada</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        button{
+            margin-top: 5px;
+            cursor: pointer;
+        }
+        #lamp {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Animação de lâmpada feita com JS</h1>
+        <h3>Espero que goste!</h3>
+    </header>
+    <div>
+    <img src="lambrok.jpg" alt="lampada" id="lamp">
+    </div>
+    <div>
+    <button id="turnOn" onclick="acenderOn()">Acender</button>
+    <button id="turnOff" onclick="apagar()">Apagar</button>
+    </div>
+    
+    <script src="lamp.js"></script>
+</body>
+</html>
